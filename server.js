@@ -105,6 +105,6 @@ app.put('/entry', async (req, res) => {
     }
 })
 
-app.listen(3001, () => {
-    console.log('app is running on port 3001');
+app.listen(process.env.PORT, () => {
+    console.log(`app is running on port ${process.env.PORT}`);
 })
