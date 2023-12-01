@@ -3,6 +3,7 @@ const express = require('express');
 const knex = require('knex');
 const bcrypt = require('bcrypt-nodejs')
 const cors = require('cors')
+const https = require('https');
 
 const db = knex({
     client: 'pg',
